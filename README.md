@@ -76,12 +76,12 @@ you may use, and there is probably more code to test than what you have
 time for. Make your decisions and be methodical. One suggested order to
 pursue is:
 
-- Item
-- WaterDispenser
-- WaterReservoir
-- Freezer
-- Chiller
-- Refrigerator
+- DONE Item
+- DONE WaterDispenser
+- DONE WaterReservoir
+- DONE Freezer
+- DONE Chiller
+- DONE Refrigerator
 
 Do not try to be too clever with your tests. Be methodical,
 straightforward, and explicit.
@@ -98,9 +98,9 @@ See if you can keep your test suite green while you:
 1. Modify the behavior in either `WaterDispenser` or `WaterReservoir`,
    to prevent the remaining volume of water from ever becoming negative.
    ("Where?" is a design decision you have to make, and "How?" is your
-   creative output.)
+   creative output.) DONE
 
-2. Test this new behavior you have introduced.
+2. Test this new behavior you have introduced. DONE
 
 3. Modify the behavior in the `WaterDispenser` class to not only drain
    the reservoir according to the volume of the vessel, but to also

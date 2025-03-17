@@ -13,11 +13,16 @@ class WaterReservoir
   end
 
   def fill
-    current_water_volume = capacity
+    # added the @ symbol
+    @current_water_volume = capacity
   end
 
   def drain(volume)
-    self.current_water_volume -= volume
+    if volume > self.current_water_volume
+      self.current_water_volume = 0
+    else
+      self.current_water_volume -= volume
+    end
   end
 
 end
